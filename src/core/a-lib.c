@@ -36,7 +36,7 @@
 // Linkage back to HOST functions. Needed when we compile as a DLL
 // in order to use the OS_* macro functions.
 #ifdef REB_API  // Included by C command line
-REBOL_HOST_LIB *Host_Lib;
+extern REBOL_HOST_LIB *Host_Lib;
 #endif
 
 #include "reb-lib.h"
