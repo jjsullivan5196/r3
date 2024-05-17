@@ -18,9 +18,9 @@ clean:
 	chmod +x ../make/r3-make
 
 ./cosmocc/bin/cosmocc:
-	curl $(COSMOCC_ZIP) -o ./cosmocc.zip
-	mkdir ./cosmocc
-	unzip -d ./cosmocc ./cosmocc.zip
+	mkdir cosmocc || true
+	cd cosmocc; curl $(COSMOCC_ZIP) -o ./cosmocc.zip
+	cd cosmocc; unzip ./cosmocc.zip
 
 clean-toolchain:
 	rm ../make/r3-make
