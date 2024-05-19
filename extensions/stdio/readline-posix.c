@@ -43,6 +43,7 @@ typedef RebolValue Value;
 #include <stdio.h>
 #include <unistd.h>  // has POSIX read() and write()
 #include <errno.h>
+#include <sys/select.h>
 
 #include <termios.h>
 
